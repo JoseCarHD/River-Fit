@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Gym API",
+      "version": "1.0.0",
+      "description": "Documentación de la API para el proyecto del gimnasio"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Servidor local"
+      }
+    ],
+    "paths": {}
+  }
+  

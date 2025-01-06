@@ -1,0 +1,349 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web del Gimnasio</title>
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class="bg-dark-header">
+      <div class="container d-flex justify-content-between align-items-center py-2">
+        <!-- Logo -->
+        <a href="/" class="text-white text-decoration-none d-flex align-items-center">
+          <svg class="me-2" width="35" height="35">
+            <circle cx="17.5" cy="17.5" r="17" fill="#28a745" />
+            <text x="9" y="22" fill="white" font-size="12" font-family="Arial, sans-serif">Logo</text>
+          </svg>
+          <span class="fs-4 fw-bold">Riverfit</span>
+        </a>
+  
+        <!-- Navegación -->
+        <nav class="d-flex">
+          <a href="/login" class="nav-link px-3 text-white text-hover-green">
+            <i class="bi bi-person-fill"></i> Login
+          </a>
+          <a href="/logout" class="nav-link px-3 text-white text-hover-green">
+            <i class="bi bi-box-arrow-right"></i> Cerrar Sesión
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  
+  
+
+
+
+  <main>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Seccion Hero -->
+    <section id="hero" class="container py-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold">Bienvenido al Gimnasio</h1>
+          <p class="lead">Únete a nosotros para alcanzar tus metas de fitness.</p>
+          <a href="#services" class="btn btn-primary btn-lg">Ver Servicios</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="../img/hero.jpg" class="img-fluid rounded-3" alt="Imagen Principal">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Servicios</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="../img/entrenador-personal.jpeg" class="card-img-top" alt="Entrenamiento personalizado">
+              <div class="card-body">
+                <h5 class="card-title">Entrenamiento Personalizado</h5>
+                <p class="card-text">Programas diseñados para tus necesidades específicas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="../img/clase-grupal.jpeg" class="card-img-top" alt="Clases grupales">
+              <div class="card-body">
+                <h5 class="card-title">Clases Grupales</h5>
+                <p class="card-text">Yoga, Zumba, Pilates y más en un ambiente social y divertido.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="../img/asesoria.jpg" class="card-img-top" alt="Asesoría en nutrición">
+              <div class="card-body">
+                <h5 class="card-title">Asesoría en Nutrición</h5>
+                <p class="card-text">Guía completa para llevar una dieta saludable y equilibrada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrenadores Section -->
+    <section id="entrenadores">
+      <h2>Nuestro Equipo de Entrenadores</h2>
+      <div class="entrenadores-container">
+        <div class="entrenador">
+          <img src="ruta/a/imagen-entrenador1.jpg" alt="Entrenador 1">
+          <h4>Nombre Entrenador 1</h4>
+          <p>Especialidad: Entrenamiento Personalizado</p>
+        </div>
+        <div class="entrenador">
+          <img src="ruta/a/imagen-entrenador2.jpg" alt="Entrenador 2">
+          <h4>Nombre Entrenador 2</h4>
+          <p>Especialidad: Yoga y Bienestar</p>
+        </div>
+        <div class="entrenador">
+          <img src="ruta/a/imagen-entrenador3.jpg" alt="Entrenador 3">
+          <h4>Nombre Entrenador 3</h4>
+          <p>Especialidad: Nutrición y Fitness</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Cambiar para inicio de sesion a otros planes o mejora tu plan -->
+
+
+    <!-- Planes Section -->
+    <section id="planes" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2>Planes de Membresía</h2>
+        <p>Ofrecemos una variedad de planes para adaptarnos a tus necesidades.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Plan Básico</h5>
+                <p class="card-text">$19.99/mes</p>
+                <p>Acceso al gimnasio durante el horario regular.</p>
+                <a href="#" class="btn btn-outline-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Plan Plus</h5>
+                <p class="card-text">$39.99/mes</p>
+                <p>Incluye acceso al gimnasio y clases grupales.</p>
+                <a href="#" class="btn btn-outline-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Plan Premium</h5>
+                <p class="card-text">$59.99/mes</p>
+                <p>Acceso total, clases grupales y asesoría en nutrición.</p>
+                <a href="#" class="btn btn-outline-primary">Seleccionar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salto o espacio entre secciones-->
+    <div class="py-4"></div>
+
+
+    <!-- Acerca de Section -->
+    <section id="about" class="container py-5 bg-light">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Sobre Nosotros</h2>
+          <p>En nuestro gimnasio, estamos comprometidos con tu bienestar y éxito...</p>
+          <a href="#contact" class="btn btn-primary">Contáctanos</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="../img/about.jpg" class="img-fluid rounded-3" alt="Sobre Nosotros">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Mapa de Ubicación Section -->
+    <section id="mapa-ubicacion">
+      <h2 class="text-center">Mapa de Ubicación</h2>
+      <div class="text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.263140755251!2d-103.4660224239167!3d25.55314731719013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fd9e57893df2d%3A0x4bb8d5b487ac9311!2sRiver%20Fit!5e1!3m2!1ses-419!2smx!4v1728456909352!5m2!1ses-419!2smx"
+          width="600" height="450" class="border-0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+
+
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contáctanos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h4>Visítanos</h4>
+            <p>1234 Calle Principal, Gomez palacio, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@gymriverfit.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <h2 class="faq-title">Preguntas Frecuentes (FAQ)</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h4 class="faq-question">¿Cuáles son los horarios de apertura?</h4>
+          <p class="faq-answer">Nuestro gimnasio está abierto de lunes a viernes de 6 AM a 10 PM y los fines de semana
+            de 8 AM a 6 PM.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">¿Ofrecen clases grupales?</h4>
+          <p class="faq-answer">Sí, ofrecemos una variedad de clases grupales, incluyendo yoga, pilates, y entrenamiento
+            funcional.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">¿Se requiere reservar clases con anticipación?</h4>
+          <p class="faq-answer">No es necesario reservar, pero recomendamos llegar con tiempo para asegurar tu lugar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="/js/main.js"></script>
+  </main>
+
+
+  <footer class="text-center text-lg-start bg-dark text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/RiverFitGym" role="button"
+          aria-label="Facebook" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-google"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </section>
+      <section class="mb-4">
+        <p>© 2024 Gimnasio RiverFit. Todos los derechos reservados.</p>
+      </section>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="../assets/dist/umd/popper.min.js"></script>
+  <script src="../assets/dist/js/bootstrap.min.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

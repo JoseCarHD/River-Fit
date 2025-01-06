@@ -1,0 +1,381 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Fondo general */
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Componentes */
+.card:hover {
+  border: 4px solid #00ff3c;
+  box-shadow: 0 16px 32px rgba(0, 255, 60, 0.8);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.btn-signup {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* Navbar y sidebar */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' fill='white' d='M1 2h14v1H1zM1 8h14v1H1zM1 14h14v1H1z'/%3E%3C/svg%3E");
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: #fff;
+  width: 250px;
+  position: fixed; /* Fijar el menú lateral */
+  top: 56px; /* Ajustar para que esté debajo del header */
+  bottom: 0; /* Asegura que llegue hasta el fondo */
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Oculto por defecto */
+  z-index: 1000;
+  padding-top: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menú lateral visible */
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: white;
+  padding: 15px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}
+
+.content.shift {
+  margin-left: 250px;
+  transition: all 0.3s ease;
+}
+
+/* Modo de Toggle */
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.sidebar ul li {
+  padding: 1rem;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #212529;
+  color: white;
+  padding: 0.25rem 1rem; /* Reducido el padding vertical */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fijar en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+main {
+  margin-left: 250px; /* Asegura que el contenido no esté detrás del menú */
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+  margin-top: 56px; /* Para no quedar detrás del header */
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.background {
+  background-color: #f0f0f0;
+}
+
+#entrenadores {
+  padding: 40px;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* General */
+.container {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+#hero img {
+  border-radius: 15px;
+}
+
+/* Entrenadores Section */
+#entrenadores h2 {
+  text-align: center;
+}
+
+.entrenadores-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.entrenador {
+  margin: 20px;
+  text-align: center;
+}
+
+.entrenador img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* About Section */
+#about {
+  border-radius: 50px;
+}
+
+/* Ubicación Section */
+#mapa-ubicacion {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+#mapa-ubicacion h2 {
+  text-align: center;
+}
+
+#mapa-ubicacion iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+header:hover {
+  background-color: #343a40; /* color más oscuro al pasar el cursor */
+}
+header svg {
+  transition: transform 0.3s ease;
+}
+
+header svg:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+  color: #00ff3c;
+}
+
+.navbar .nav-link {
+  color: #adb5bd;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #00ff3c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0rem;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #343a40;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
+
+/* Estilo responsive para la barra de navegación */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
